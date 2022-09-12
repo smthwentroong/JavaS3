@@ -48,7 +48,6 @@ public class SimpleGUI extends JFrame {
                     lb1.setText("Result: " + m + "x" + r);
                     lb2.setText("Last Scorer: " + l);
                     lb3.setText("Winner: " + w);
-                    System.out.println("Yeeeees");
                 }
                 catch (Exception exp) {
 
@@ -73,7 +72,6 @@ public class SimpleGUI extends JFrame {
                     lb1.setText("Result: " + m + "x" + r);
                     lb2.setText("Last Scorer: " + l);
                     lb3.setText("Winner: " + w);
-                    System.out.println("Yeeeees");
                 }
                 catch (Exception exp) {
 
