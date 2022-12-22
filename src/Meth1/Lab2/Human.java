@@ -6,6 +6,7 @@ public class Human {
     int lifeExpectancy;
     Scanner scn = new Scanner(System.in);
     public Human() {
+        System.out.println("Введите продолжительность жизни: ");
         lifeExpectancy = scn.nextInt();
         Head controller = new Head();
         while (lifeExpectancy-- > 0) {

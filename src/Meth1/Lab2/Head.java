@@ -16,6 +16,7 @@ public class Head {
 
     public Head() {
         located = false;
+        action();
     }
 
     public String action() {

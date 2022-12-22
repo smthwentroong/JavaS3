@@ -3,13 +3,16 @@ package Meth1.Task5;
 import java.util.Scanner;
 
 public class Recursion {
-
-    static Scanner scn = new Scanner(System.in);
+    public static boolean eight(String word) {
+        return eight(word, 0);
+    }
     public static boolean eight(String word, int i) {
         if (word.charAt(i) == word.charAt(word.length() - i - 1)) {
             i++;
-            if (i < word.length()/2+1) eight(word, i);
-            return true;
+            if (i < word.length()/2+1) {
+                return eight(word, i);
+            }
+            else return true;
         }
         return false;
     }
@@ -34,19 +37,24 @@ public class Recursion {
     public static void main(String[] args) {
         while (true) {
             System.out.println("Введите номер задания (1-3 = 8-10):");
-            switch (scn.nextInt()) {
+            Scanner scn = new Scanner(System.in);
+            int choice = scn.nextInt();
+            switch (choice) {
                 case 1:
+                    scn = new Scanner(System.in);
                     System.out.println("8. Введите слово: ");
                     String word = scn.nextLine();
-                    if (eight(word, 0)) System.out.println("Палиндром");
+                    if (eight(word)) System.out.println("Палиндром");
                     else System.out.println("Не палиндром");
                 case 2:
+                    scn = new Scanner(System.in);
                     System.out.println("\n9. Введите кол-во нулей:");
                     int a = scn.nextInt();
                     System.out.println("Введите кол-во единиц:");
                     int b = scn.nextInt();
                     System.out.println(nine(a, b));
                 case 3:
+                    scn = new Scanner(System.in);
                     System.out.println("Введите число для переворота:");
                     a = scn.nextInt();
                     System.out.println(ten(a));

@@ -9,8 +9,8 @@ public class MVCPatternDemo {
 
     public static Student retreiveStudentFromDatabase(){
         Student tmp = new Student();
-        tmp.setName("Viktor");
-        tmp.setRollNo("TMP");
+        tmp.setName("Андрей");
+        tmp.setRollNo("FULLSTACK");
         return tmp;
     }
 }
